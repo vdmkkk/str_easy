@@ -11,7 +11,7 @@ void itc_first_end_three(string str);
 int itc_count_char_in_str(char cr, string str);
 string itc_even_place(string str);
 double itc_percent_lower_uppercase(string str);
-string itc_reverse_string(string str);
+string itc_reverse_str(string str);
 string itc_slice_str(string str, int start, int ending);
 bool itc_equal_reverse(string str);
 int itc_find_str(string str1, string str2);
