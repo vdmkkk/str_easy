@@ -4,7 +4,7 @@ string itc_even_place(string str){
     int i=0;
     string newstring = "";
     while (str[i] != '\0'){
-        if (i % 2 == 0) newstring += str[i];
+        if (i % 2 == 1) newstring += str[i];
         i += 1;
     }
     return newstring;
