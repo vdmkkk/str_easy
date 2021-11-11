@@ -1,23 +1,12 @@
 #include "str_easy.h"
 
-int itc_find_str(string str1, string str2){
-    int i1 = 0;
-    int i2;
-    int res = -1;
-    bool started = false;
-    bool in = false;
-    while (str1[i1] != '\0'){
-        if (str1[i1] == str2[0] && !started){
-            started = true;
-            i2 = 0;
-            res = i1;
+long long itc_find_str(string str1, string str2){
+    long long res = -1;
+    for (int i = 0; i < itc_len(str1); i++){
+        if (itc_slice_str(str1, i, i + itc_len(str2) - 1) == str2){
+            res = i;
+            break;
         }
-        if (started) {
-            if (i2 == itc_len(str2) - 1) return res;
-            if (str2[i2] != str1[i1]) started = false;
-            i2 += 1;
-        }
-        i1 += 1;
     }
-    return -1;
+    return res;
 }
