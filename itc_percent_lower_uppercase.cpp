@@ -11,5 +11,6 @@ double itc_percent_lower_uppercase(string str){
         if (newchar >= 97 && newchar <= 122) lower += 1;
         i += 1;
     }
+    if (lower == 0) return -1;
     return upper / lower;
 }
