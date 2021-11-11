@@ -14,7 +14,7 @@ double itc_percent_lower_uppercase(string str);
 string itc_reverse_str(string str);
 string itc_slice_str(string str, int start, int ending);
 bool itc_equal_reverse(string str);
-int itc_find_str(string str1, string str2);
+long long itc_find_str(string str1, string str2);
 string itc_three_str(string str1, string str2, string str3);
 int itc_max_char_on_end(string str);
 string itc_cmp_str(string str1, string str2, int num);
